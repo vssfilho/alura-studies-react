@@ -15,8 +15,8 @@ export default class Login extends Component {
         const requestInfo = {
             method: 'POST',
             body: JSON.stringify({
-                login: this.state.login,
-                senha: this.state.senha
+                login: this.login.value,
+                senha: this.senha.value
             }),
             headers: new Headers({
                 'Content-type': 'application/json'
